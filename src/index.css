@@ -12,13 +12,24 @@
   font-style: normal;
 }
 
+:root {
+  --primary-color: #0B67AA;
+  --secondary-color: #50A9DD;
+  --main-gradient: linear-gradient(to right, #0B67AA, #50A9DD);
+}
+
 body {
   margin: 0;
   font-family: 'Namart', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: '#f5f5f5';
 }
 
 code {
   font-family: 'Namart', sans-serif;
+}
+
+.bg-dark {
+  background-color: #000 !important;
 }

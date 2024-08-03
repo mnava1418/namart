@@ -1,6 +1,10 @@
+import Menu from "./views/components/Menu";
+
 function App() {
   return (
-    <div>Hello world</div>
+    <>
+      <Menu />
+    </>
   );
 }
 
