@@ -24,6 +24,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: '#f5f5f5';
+  color: #000;
+  font-size: 16px;
 }
 
 code {
@@ -32,4 +34,14 @@ code {
 
 .bg-dark {
   background-color: #000 !important;
+}
+
+h2 {
+  font-size: 56px;
+  font-weight: bold !important;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: bold !important;
 }
