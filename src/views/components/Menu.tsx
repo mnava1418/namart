@@ -4,7 +4,7 @@ import '../../assets/styles/menu.css'
 
 const Menu = () => {
   return (
-    <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="custom-navbar">
+    <Navbar bg="dark" sticky='top' data-bs-theme="dark" expand="lg" className="custom-navbar">
       <Container>
         <Navbar.Brand href="#home">
             <div className='menu-logo'/>
