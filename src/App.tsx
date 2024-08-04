@@ -7,7 +7,9 @@ function App() {
   return (
     <>
       <Menu />
-      <MainPage />
+      <div className="d-flex flex-column justify-content-center align-items-center" style={{width: '100%'}}>
+        <MainPage />
+      </div>
     </>
   );
 }

@@ -3,10 +3,11 @@ import '../../assets/styles/button.css'
 type ButtonProps =  {
     type: 'primary' | 'secondary',
     label: string,
-    onClick: () => void
+    onClick: () => void,
+    style?: {}
 }
 
-const Button = ({type, label, onClick}: ButtonProps) => {
+const Button = ({type, label, onClick, style = {}}: ButtonProps) => {
     let btnStyle = ''
 
     switch (type) {
@@ -21,7 +22,7 @@ const Button = ({type, label, onClick}: ButtonProps) => {
     }    
 
     return (
-        <div className={`custom-btn-container ${btnStyle}`} onClick={onClick}>
+        <div className={`custom-btn-container ${btnStyle}`} onClick={onClick} style={{...style}}>
             {label}
         </div>
     )
