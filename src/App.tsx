@@ -1,7 +1,7 @@
 import Menu from "./views/components/Menu";
 import MainPage from "./views/pages/MainPage";
 
-import './assets/styles/main.css'
+import './styles/main.css'
 
 function App() {
   return (

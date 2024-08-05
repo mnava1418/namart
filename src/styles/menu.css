@@ -42,7 +42,7 @@
   }
 
   .menu-logo {
-    background-image: url('../images/logo.png');
+    background-image: url('../assets/images/logo.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

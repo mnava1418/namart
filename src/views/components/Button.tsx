@@ -1,4 +1,4 @@
-import '../../assets/styles/button.css'
+import '../../styles/button.css'
 
 type ButtonProps =  {
     type: 'primary' | 'secondary',

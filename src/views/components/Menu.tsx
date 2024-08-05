@@ -1,6 +1,6 @@
 import { Navbar, Container, Nav } from 'react-bootstrap'
 
-import '../../assets/styles/menu.css'
+import '../../styles/menu.css'
 
 const Menu = () => {
   return (
