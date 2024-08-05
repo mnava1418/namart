@@ -9,7 +9,7 @@
 }
 
 .app-full-screen {
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px)
 }
 
 .text-gradient {
@@ -51,5 +51,11 @@
 
     .main-bg-img {
         margin-top: 0px
+    }
+}
+
+@media (min-width: 1200px) { 
+    .app-full-screen {
+        min-height: 800px
     }
 }
