@@ -24,6 +24,12 @@
   .custom-nablink:focus {
     color: #fff !important;
   }
+
+  #basic-nav-dropdown,
+  #basic-nav-dropdown:hover,
+  #basic-nav-dropdown:focus {
+    color: #fff !important;
+  }
   
   .custom-nablink::after {
     content: '';
@@ -35,10 +41,10 @@
     background: var(--main-gradient);
     transition: width 0.3s ease-in-out;
   }
-  
-  .nav-link:hover::after,
-  .nav-link:focus::after {
-      width: 90%;
+
+  .custom-nablink:hover::after,
+  .custom-nablink:focus::after {
+    width: 25%;
   }
 
   .menu-logo {
@@ -48,4 +54,11 @@
     background-repeat: no-repeat;
     width: 200px;
     height: 50px;
+  }
+
+  @media (min-width: 992px) {
+    .custom-nablink:hover::after,
+    .custom-nablink:focus::after {
+      width: 90%;
+    }
   }
