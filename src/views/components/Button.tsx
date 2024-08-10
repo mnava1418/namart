@@ -1,7 +1,7 @@
 import '../../styles/button.css'
 
 type ButtonProps =  {
-    type: 'primary' | 'secondary',
+    type: 'primary' | 'secondary' | 'alternative',
     label: string,
     onClick: () => void,
     style?: {}
@@ -16,6 +16,9 @@ const Button = ({type, label, onClick, style = {}}: ButtonProps) => {
             break;
         case 'secondary':
             btnStyle = 'custom-btn-secondary'
+            break;
+        case 'alternative':
+            btnStyle = 'custom-btn-alternative'
             break;
         default:
             break;

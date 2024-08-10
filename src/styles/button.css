@@ -18,8 +18,7 @@
 }
 
 .custom-btn-primary:hover {
-    background-color: transparent;
-    background: var(--secondary-color);
+    background-color: var(--secondary-color);
 }
 
 .custom-btn-secondary {
@@ -30,6 +29,16 @@
 }
 
 .custom-btn-secondary:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.custom-btn-alternative {
+    background-color: #fff;
+    color: #000;
+}
+
+.custom-btn-alternative:hover {
     background-color: #000;
     color: #fff;
 }
