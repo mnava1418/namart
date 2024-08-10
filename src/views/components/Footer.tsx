@@ -18,8 +18,8 @@ const Footer = () => {
           <div><span>{`© ${new Date().getFullYear()}`}</span></div>
           <div className='custom-footer-logo custom-img custom-img-contain'/>
           <div className='d-flex flex-row justify-content-center align-items-center'>
-            <div className='custom-footer-icon' onClick={() => {window.open('https://www.instagram.com/namartdev', '_blank')}}><i className="bi bi-instagram fs-3" /></div>
-            <div className='custom-footer-icon' onClick={() => {window.open('https://github.com/mnava1418', '_blank')}}><i className="bi bi-github fs-3" /></div>
+            <div className='custom-footer-icon' onClick={() => {window.open('https://www.instagram.com/namartdev', '_blank')}}><i className="bi bi-instagram fs-4" /></div>
+            <div className='custom-footer-icon' onClick={() => {window.open('https://github.com/mnava1418', '_blank')}}><i className="bi bi-github fs-4" /></div>
           </div>
         </div>
     </footer>
