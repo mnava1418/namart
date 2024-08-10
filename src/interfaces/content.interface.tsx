@@ -17,7 +17,15 @@ export type MainContent = {
     contact: string
 }
 
+export type FooterContent = {
+    titleOne: string,
+    titleTwo: string,
+    text: string,
+    book: string
+}
+
 export type Content = {
     menu: MenuContent,
-    main: MainContent
+    main: MainContent,
+    footer: FooterContent
 }

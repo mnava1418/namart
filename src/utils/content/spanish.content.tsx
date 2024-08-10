@@ -1,4 +1,4 @@
-import { Content, MainContent, MenuContent } from "../../interfaces/content.interface";
+import { Content, FooterContent, MainContent, MenuContent } from "../../interfaces/content.interface";
 
 const menuContent: MenuContent = {
     about: 'Sobre mí',
@@ -17,9 +17,17 @@ const mainContent: MainContent = {
     title: 'Hola, soy Martin'
 }
 
+const footerContent: FooterContent = {
+    book: 'Agendar Llamada',
+    text: 'Me encantaría ayudarte con el proyecto que tienes en mente. Agenda una llamada y cuéntame cómo puedo colaborar contigo.',
+    titleOne: '¿Tienes algún proyecto?',
+    titleTwo: 'Platiquemos'
+}
+
 const spanishContent: Content = {
     menu: menuContent,
-    main: mainContent
+    main: mainContent,
+    footer: footerContent
 }
 
 export default spanishContent

@@ -31,7 +31,7 @@ const Menu = ({content, language, setLanguage}: MenuProps) => {
   return (
     <Navbar bg="dark" sticky='top' data-bs-theme="dark" expand="lg" className="custom-navbar">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
             <div className='menu-logo'/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
