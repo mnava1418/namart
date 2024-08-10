@@ -9,6 +9,15 @@ export type MenuContent = {
     english: string
 }
 
+export type MainContent = {
+    title: string,
+    subtitle: string,
+    text: string,
+    services: string,
+    contact: string
+}
+
 export type Content = {
-    menu: MenuContent
+    menu: MenuContent,
+    main: MainContent
 }

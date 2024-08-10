@@ -24,7 +24,7 @@ function App() {
     <>
       <Menu content={currentContent.menu} language={language} setLanguage={setLanguage} />
       <div className="d-flex flex-column justify-content-center align-items-center" style={{width: '100%'}}>
-        <MainPage />
+        <MainPage content={currentContent.main}/>
         <Footer />
       </div>
     </>
