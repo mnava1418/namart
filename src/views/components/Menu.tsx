@@ -19,8 +19,8 @@ const Menu = () => {
           </Nav>
           <Nav className="me-auto justify-content-end">
             <div className='d-flex flex-row justify-content-start'>
-                <Nav.Link href="https://www.instagram.com/namartdev" style={{marginRight: '16px'}} target='_blank'><i className="bi bi-instagram" /></Nav.Link>
-                <Nav.Link href="https://github.com/mnava1418" target='_blank'><i className="bi bi-github" /></Nav.Link>
+                <Nav.Link href="https://www.instagram.com/namartdev" style={{marginRight: '16px'}} target='_blank'><i className="bi bi-instagram fs-4" /></Nav.Link>
+                <Nav.Link href="https://github.com/mnava1418" target='_blank'><i className="bi bi-github fs-4" /></Nav.Link>
             </div>
           </Nav>
         </Navbar.Collapse>
