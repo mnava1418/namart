@@ -11,7 +11,7 @@ const MainPage = ({content}: MainPageProps) => {
 
     return (
         <main id='home' className='app-container app-full-screen'>
-            <div className='d-flex flex-column'>
+            <div className='d-flex flex-column justify-content-start'>
                 <div>
                     <div style={{marginBottom: '16px'}}>
                         <span style={{fontSize: '20px', fontWeight: 'bold'}}><img src={hand} alt="" style={{marginRight: '16px'}}/>Hello, World!</span>
@@ -20,7 +20,7 @@ const MainPage = ({content}: MainPageProps) => {
                     <h3 className='text-gradient'>{subtitle}</h3>
                     <h4>{text}</h4>
                 </div>
-                <div className='d-flex flex-row justify-content-start' style={{paddingTop: '30px'}}>
+                <div className='d-flex flex-row justify-content-center' style={{paddingTop: '30px'}}>
                     <Button type='primary' label={services} onClick={() => {alert('Servicios')}} style={{marginRight: '16px'}}/>
                     <Button type='secondary' label={contact} onClick={() => {alert('Contáctame')}}/>
                 </div>
