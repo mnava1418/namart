@@ -6,6 +6,7 @@ import Footer from "./views/components/Footer";
 import {englishContent, spanishContent} from './utils/content/content'
 import { useEffect, useState } from "react";
 import { Content, language } from "./interfaces/content.interface";
+import AboutPage from './views/pages/AboutPage';
 
 function App() {
   const [currentContent, setCurrentContent] = useState<Content>(spanishContent)
@@ -25,6 +26,7 @@ function App() {
       <Menu content={currentContent.menu} language={language} setLanguage={setLanguage} />
       <div className="d-flex flex-column justify-content-center align-items-center" style={{width: '100%'}}>
         <MainPage content={currentContent.main}/>
+        <AboutPage />
         <Footer content={currentContent.footer} />
       </div>
     </>

@@ -1,11 +1,14 @@
-.app-container {
+.custom-container {
     width: 100%;
     max-width: 1200px;
+    padding: 32px;
+}
+
+.app-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 32px;
 }
 
 .app-full-screen {
@@ -18,6 +21,10 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+}
+
+.custom-bg-gradient {
+    background: var(--main-gradient);
 }
 
 .main-bg-img {
