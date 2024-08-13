@@ -1,7 +1,13 @@
-import { Content, FooterContent, MainContent, MenuContent } from "../../interfaces/content.interface";
+import { 
+    AboutContent, 
+    Content, 
+    FooterContent, 
+    MainContent, 
+    MenuContent 
+} from "../../interfaces/content.interface";
 
 const menuContent: MenuContent = {
-    about: 'About',
+    about: 'About me',
     english: 'English',
     home: 'Home',
     projects: 'Projects',
@@ -24,10 +30,19 @@ const footerContent: FooterContent = {
     titleTwo: "Let's talk"
 }
 
+const aboutContent: AboutContent = {
+    buttonOne: 'Download Resume',
+    buttonTwo: 'Know me more',
+    text: 'I am Martín Nava, a software developer with over 10 years of experience in application development. Passionate about technology, I focus on creating innovative solutions that turn ideas into reality.',
+    title: 'About Me',
+    wordsToHighlight: ["software developer", "technology", "innovative solutions", "application development" ]
+}
+
 const englishContent: Content = {
     menu: menuContent,
     main: mainContent,
-    footer: footerContent
+    footer: footerContent,
+    about: aboutContent
 }
 
 export default englishContent

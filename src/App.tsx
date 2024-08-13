@@ -26,7 +26,7 @@ function App() {
       <Menu content={currentContent.menu} language={language} setLanguage={setLanguage} />
       <div className="d-flex flex-column justify-content-center align-items-center" style={{width: '100%'}}>
         <MainPage content={currentContent.main}/>
-        <AboutPage />
+        <AboutPage content={currentContent.about}/>
         <Footer content={currentContent.footer} />
       </div>
     </>

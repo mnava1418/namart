@@ -24,8 +24,17 @@ export type FooterContent = {
     book: string
 }
 
+export type AboutContent = {
+    wordsToHighlight: Array<String>,
+    title: string,
+    text: string,
+    buttonOne: string,
+    buttonTwo: string
+}
+
 export type Content = {
     menu: MenuContent,
     main: MainContent,
-    footer: FooterContent
+    footer: FooterContent,
+    about: AboutContent
 }

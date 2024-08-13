@@ -1,11 +1,16 @@
 import { useEffect } from 'react'
 import '../../styles/about.css'
 import Button from '../components/Button'
+import { AboutContent } from '../../interfaces/content.interface'
 
-const AboutPage = () => {
+type AboutPageProps = {
+  content: AboutContent
+}
+
+const AboutPage = ({content}: AboutPageProps) => {
+  const {buttonOne, buttonTwo, text, title, wordsToHighlight} = content
   
   useEffect(() => {
-    const wordsToHighlight = ["desarrollador de software", "tecnología", "soluciones innovadoras", "desarrollo de aplicaciones" ]
     const textElement: HTMLElement = document.getElementById("aboutParagraph") as HTMLElement
     let originalText = textElement.innerHTML
 
@@ -15,12 +20,12 @@ const AboutPage = () => {
     });
 
     textElement.innerHTML = originalText;
-  }, [])
+  }, [text])
   
   return (
     <section id='about' style={{backgroundColor: '#fff'}}>
       <div className='custom-container'>
-        <h3 style={{marginBottom: '32px'}}><span style={{color:'#0B67AA'}}>Sobre</span> mí</h3>
+        <h3 style={{marginBottom: '32px'}}><span style={{color:'#0B67AA'}}>{title.split(' ')[0]}</span> {title.split(' ')[1]}</h3>
         <div className='app-container' style={{marginBottom: '32px'}}>
           <div id='aboutImg' className='d-flex flex-column justify-content-center align-items-center'>
             <div className='about-bg-img-container'>
@@ -28,10 +33,10 @@ const AboutPage = () => {
             </div>
           </div>
           <div id='aboutText' className='d-flex flex-column justify-content-center align-items-center'>
-            <p id='aboutParagraph' style={{textAlign: 'center', fontSize: '24px', fontWeight: 'bold'}}>Soy Martín Nava, desarrollador de software con más de 10 años de experiencia en el desarrollo de aplicaciones. Apasionado por la tecnología, me enfoco en crear soluciones innovadoras que transformen ideas en realidad.</p>
+            <p id='aboutParagraph' style={{textAlign: 'center', fontSize: '24px', fontWeight: 'bold'}}>{text}</p>
             <div className='d-flex flex-row justify-content-center' style={{paddingTop: '30px' }}>
-                <Button type='primary' label={'Descarga mi CV'} onClick={() => {window.open('https://drive.google.com/file/d/18R_czVPRyJfhMmQV4rc0jJF7BX79MIkJ/view?usp=drive_link', '_blank')}} style={{marginRight: '16px'}}/>
-                <Button type='secondary' label={'Conóceme más'} onClick={() => {alert('Conóceme más')}}/>
+                <Button type='primary' label={buttonOne} onClick={() => {window.open('https://drive.google.com/file/d/18R_czVPRyJfhMmQV4rc0jJF7BX79MIkJ/view?usp=drive_link', '_blank')}} style={{marginRight: '16px'}}/>
+                <Button type='secondary' label={buttonTwo} onClick={() => {alert('Conóceme más')}}/>
             </div>
           </div>
         </div>
