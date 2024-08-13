@@ -32,9 +32,22 @@ export type AboutContent = {
     buttonTwo: string
 }
 
+
+export type CardProps = {
+    icon: string,
+    title: string,
+    text: string
+}
+
+export type ServicesContent = {
+    title: string
+    services: Array<CardProps>
+}
+
 export type Content = {
     menu: MenuContent,
     main: MainContent,
     footer: FooterContent,
-    about: AboutContent
+    about: AboutContent,
+    services: ServicesContent
 }

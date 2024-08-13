@@ -3,7 +3,8 @@ import {
     Content, 
     FooterContent, 
     MainContent, 
-    MenuContent 
+    MenuContent, 
+    ServicesContent
 } from "../../interfaces/content.interface";
 
 const menuContent: MenuContent = {
@@ -38,11 +39,33 @@ const aboutContent: AboutContent = {
     wordsToHighlight: ["software developer", "technology", "innovative solutions", "application development" ]
 }
 
+const servicesContent: ServicesContent = {
+    title: 'My Services',
+    services: [
+        {
+            icon: 'bi bi-laptop',
+            title: 'Web',
+            text: 'Web applications to enhance your online presence and increase the efficiency of your operations. Our approach is not limited to web design alone but encompasses a wide range of solutions.'
+        },
+        {
+            icon: 'bi bi-phone',
+            title: 'Mobiles',
+            text: 'Native and hybrid mobile app development for iOS and Android. From enterprise applications to consumer apps, ensuring an engaging and functional mobile experience for your users.'
+        },
+        {
+            icon: 'bi bi-currency-bitcoin',
+            title: 'Blockchain',
+            text: 'Explora el potencial del blockchain con nuestras soluciones de desarrollo de aplicaciones descentralizadas (DApps). Desde contratos inteligentes hasta aplicaciones de cadena de bloques.'
+        }
+    ]
+}
+
 const englishContent: Content = {
     menu: menuContent,
     main: mainContent,
     footer: footerContent,
-    about: aboutContent
+    about: aboutContent,
+    services: servicesContent
 }
 
 export default englishContent
