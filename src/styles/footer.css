@@ -25,6 +25,7 @@
     width: 200px;
     height: 100px;
     background-image: url('../assets/images/logo.png');
+    cursor: pointer;
 }
 
 .custom-footer-action {
