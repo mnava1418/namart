@@ -22,8 +22,8 @@ const MainPage = ({content}: MainPageProps) => {
                         <h4>{text}</h4>
                     </div>
                     <div className='d-flex flex-row justify-content-center' style={{paddingTop: '30px'}}>
-                        <Button type='primary' label={services} onClick={() => {alert('Servicios')}} style={{marginRight: '16px'}}/>
-                        <Button type='secondary' label={contact} onClick={() => {alert('Contáctame')}}/>
+                        <Button type='primary' label={services} onClick={() => {window.open('#services', '_self')}} style={{marginRight: '16px'}}/>
+                        <Button type='secondary' label={contact} onClick={() => {window.open('mailto:martin@namart.tech', '_self')}}/>
                     </div>
                 </div>
                 <div className='main-bg-img custom-img custom-img-contain'/>
