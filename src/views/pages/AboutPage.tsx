@@ -25,7 +25,7 @@ const AboutPage = ({content}: AboutPageProps) => {
   return (
     <section id='about' style={{backgroundColor: '#fff'}}>
       <div className='custom-container'>
-        <h3 style={{marginBottom: '32px'}}><span style={{color:'#0B67AA'}}>{title.split(' ')[0]}</span> {title.split(' ')[1]}</h3>
+        <h3 style={{margin: '32px 0px 32px 0px'}}><span style={{color:'#0B67AA'}}>{title.split(' ')[0]}</span> {title.split(' ')[1]}</h3>
         <div className='app-container' style={{marginBottom: '32px'}}>
           <div id='aboutImg' className='d-flex flex-column justify-content-center align-items-center'>
             <div className='about-bg-img-container'>
