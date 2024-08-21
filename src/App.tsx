@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { Content, language } from "./interfaces/content.interface";
 import AboutPage from './views/pages/AboutPage';
 import ServicesPage from './views/pages/ServicesPage';
+import ProjectsPage from './views/pages/ProjectsPage';
 
 function App() {
   const [currentContent, setCurrentContent] = useState<Content>(spanishContent)
@@ -29,6 +30,7 @@ function App() {
         <MainPage content={currentContent.main}/>
         <AboutPage content={currentContent.about}/>
         <ServicesPage content={currentContent.services}/>
+        <ProjectsPage content={currentContent.projects}/>
         <Footer content={currentContent.footer} />
       </div>
     </>

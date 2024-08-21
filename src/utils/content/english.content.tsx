@@ -4,6 +4,7 @@ import {
     FooterContent, 
     MainContent, 
     MenuContent, 
+    ProjectsContent, 
     ServicesContent
 } from "../../interfaces/content.interface";
 
@@ -60,12 +61,27 @@ const servicesContent: ServicesContent = {
     ]
 }
 
+const projectsContent: ProjectsContent = {
+    title: 'Recent Projects',
+    projects: [
+        {
+            bgColor: '#451952',
+            imgClass: 'project-img-troca'
+        },
+        {
+            bgColor: '#000',
+            imgClass: 'project-img-marla'
+        }
+    ]
+}
+
 const englishContent: Content = {
     menu: menuContent,
     main: mainContent,
     footer: footerContent,
     about: aboutContent,
-    services: servicesContent
+    services: servicesContent,
+    projects: projectsContent
 }
 
 export default englishContent

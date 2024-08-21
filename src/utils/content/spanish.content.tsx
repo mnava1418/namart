@@ -1,4 +1,4 @@
-import { AboutContent, Content, FooterContent, MainContent, MenuContent, ServicesContent } from "../../interfaces/content.interface";
+import { AboutContent, Content, FooterContent, MainContent, MenuContent, ProjectsContent, ServicesContent } from "../../interfaces/content.interface";
 
 const menuContent: MenuContent = {
     about: 'Sobre mí',
@@ -53,12 +53,27 @@ const servicesContent: ServicesContent = {
     ]
 }
 
+const projectsContent: ProjectsContent = {
+    title: 'Proyectos Recientes',
+    projects: [
+        {
+            bgColor: '#451952',
+            imgClass: 'project-img-troca'
+        },
+        {
+            bgColor: '#000',
+            imgClass: 'project-img-marla'
+        }
+    ]
+}
+
 const spanishContent: Content = {
     menu: menuContent,
     main: mainContent,
     footer: footerContent,
     about: aboutContent,
-    services: servicesContent
+    services: servicesContent,
+    projects: projectsContent
 }
 
 export default spanishContent

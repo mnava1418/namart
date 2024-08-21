@@ -40,7 +40,7 @@ const Menu = ({content, language, setLanguage}: MenuProps) => {
             <Nav.Link href="#home" className='custom-nablink'>{home}</Nav.Link>
             <Nav.Link href="#about" className='custom-nablink'>{about}</Nav.Link>
             <Nav.Link href="#services" className='custom-nablink'>{services}</Nav.Link>
-            <Nav.Link href="#project" className='custom-nablink'>{projects}</Nav.Link>
+            <Nav.Link href="#projects" className='custom-nablink'>{projects}</Nav.Link>
           </Nav>
           <Nav className="me-auto justify-content-end">
             <div className='d-flex flex-row justify-content-start align-items-center'>

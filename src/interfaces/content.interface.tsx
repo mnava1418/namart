@@ -44,10 +44,21 @@ export type ServicesContent = {
     services: Array<CardProps>
 }
 
+export type ProjectItem = {
+    bgColor: string,
+    imgClass: string,
+}
+
+export type ProjectsContent = {
+    title: string
+    projects: Array<ProjectItem>
+}
+
 export type Content = {
     menu: MenuContent,
     main: MainContent,
     footer: FooterContent,
     about: AboutContent,
-    services: ServicesContent
+    services: ServicesContent,
+    projects: ProjectsContent
 }
