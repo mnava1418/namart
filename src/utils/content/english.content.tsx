@@ -56,7 +56,7 @@ const servicesContent: ServicesContent = {
         {
             icon: 'bi bi-currency-bitcoin',
             title: 'Blockchain',
-            text: 'Explora el potencial del blockchain con nuestras soluciones de desarrollo de aplicaciones descentralizadas (DApps). Desde contratos inteligentes hasta aplicaciones de cadena de bloques.'
+            text: 'Explore the potential of blockchain with our decentralized application (DApp) development solutions. From smart contracts to blockchain applications.'
         }
     ]
 }
