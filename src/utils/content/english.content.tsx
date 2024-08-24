@@ -66,11 +66,44 @@ const projectsContent: ProjectsContent = {
     projects: [
         {
             bgColor: '#451952',
-            imgClass: 'project-img-troca'
+            imgClass: 'project-img-troca',
+            title: 'Troca',
+            description: 'Troca is an innovative application that integrates artificial intelligence to allow users to create, sell, and trade unique NFTs. Offering an integrated marketplace and a digital wallet, our platform fosters a vibrant community where artists and collectors interact in a secure and accessible environment. With advanced tools for digital art creation, this application redefines the digital art experience, democratizing access to the world of NFTs.',
+            sections: [
+                {
+                    title: 'Stack',
+                    text: 'React, Redux, Node JS, Solidity, HTML, Firebase',
+                    isLink: false
+                },
+                {
+                    title: 'Link',
+                    text: 'https://trocaa.netlify.app/',
+                    isLink: true
+                },
+                {
+                    title: 'Gthub',
+                    text: 'https://github.com/mnava1418/troca',
+                    isLink: true
+                }
+            ]
         },
         {
             bgColor: '#000',
-            imgClass: 'project-img-marla'
+            imgClass: 'project-img-marla',
+            title: 'Marla Capital',
+            description: 'We designed an administrative dashboard for Marla Capital, optimizing user management, investment report generation, and fund performance monitoring. This solution provides efficient tools for administrators, promoting transparent and effective management of the investment fund.',
+            sections: [
+                {
+                    title: 'Stack',
+                    text: 'React, Redux, Node JS, HTML, Firebase',
+                    isLink: false
+                },
+                {
+                    title: 'Link',
+                    text: 'https://marlacapital.netlify.app/',
+                    isLink: true
+                }
+            ]
         }
     ]
 }

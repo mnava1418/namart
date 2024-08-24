@@ -43,9 +43,28 @@
     background-size: contain;
 }
 
+.modal-content {
+    background-color: whitesmoke !important;
+}
+
+.modal-header {
+    border-bottom: 0px !important;
+}
+
+.custom-modal {
+    width: 100%;
+    height: 700px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 @media (min-width: 768px) { 
     .main-bg-img {
         width: 500px;
+        height: 500px;
+    }
+
+    .custom-modal {
         height: 500px;
     }
 }

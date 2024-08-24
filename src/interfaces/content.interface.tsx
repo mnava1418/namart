@@ -44,9 +44,18 @@ export type ServicesContent = {
     services: Array<CardProps>
 }
 
+type ProjectSection = {
+    title: string,
+    text: string,
+    isLink: boolean
+}
+
 export type ProjectItem = {
     bgColor: string,
     imgClass: string,
+    title: string,
+    description: string,
+    sections: Array<ProjectSection>
 }
 
 export type ProjectsContent = {

@@ -25,10 +25,31 @@
     background-image: url('../assets/images/marla.png');
 }
 
+.project-modal-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.project-modal-description ul {
+    padding-left: 0px;
+}
+
 @media (min-width: 768px) { 
     .project-container {
         width: 400px;
         height: 400px;
         margin: 16px 32px 32px 16px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .project-modal-description {
+        flex-direction: row;
+    }
+
+    .project-modal-description ul {
+        padding-left: 2rem;
     }
 }
