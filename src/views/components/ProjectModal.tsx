@@ -1,4 +1,4 @@
-import { Modal } from 'react-bootstrap'
+import { Carousel, Modal } from 'react-bootstrap'
 import { ProjectItem } from '../../interfaces/content.interface'
 
 type ProjectModalProps = {
@@ -8,6 +8,21 @@ type ProjectModalProps = {
 }
 
 const ProjectModal = ({show, handleShow, project}: ProjectModalProps) => {
+    const getImages = () => {
+        const projectImages = []
+
+        for (let index = 0; index < project.images.count; index++) {
+            projectImages.push(
+                <Carousel.Item key={index} style={{backgroundColor: project.bgColor, height: '350px'}}>
+                    <div className='d-flex flex-colum justify-content-center align-items-center' style={{height: '100%'}}>                        
+                        <div className='custom-img custom-img custom-img-contain' style={{width: '100%', height: '100%', backgroundImage: `url(${window.location.protocol}//${window.location.hostname}:${window.location.port}/${project.images.prefix}/${index + 1}.png)`}} />
+                    </div>
+                </Carousel.Item>
+            )
+        }
+        return projectImages
+    }
+
     if(show === false || project === undefined) {
         return(<></>)
     }
@@ -50,6 +65,9 @@ const ProjectModal = ({show, handleShow, project}: ProjectModalProps) => {
                             </ul>
                         </div>
                     </div>
+                    <Carousel style={{width: '100%'}}>
+                        {getImages()}
+                    </Carousel>
                 </div>
             </Modal.Body>
         </Modal>

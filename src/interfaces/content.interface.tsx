@@ -47,7 +47,7 @@ export type ServicesContent = {
 type ProjectSection = {
     title: string,
     text: string,
-    isLink: boolean
+    isLink: boolean    
 }
 
 export type ProjectItem = {
@@ -55,7 +55,11 @@ export type ProjectItem = {
     imgClass: string,
     title: string,
     description: string,
-    sections: Array<ProjectSection>
+    sections: Array<ProjectSection>,
+    images: {
+        prefix: string
+        count:number
+    }
 }
 
 export type ProjectsContent = {

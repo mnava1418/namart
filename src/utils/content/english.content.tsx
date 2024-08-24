@@ -85,7 +85,11 @@ const projectsContent: ProjectsContent = {
                     text: 'https://github.com/mnava1418/troca',
                     isLink: true
                 }
-            ]
+            ],
+            images: {
+                count: 5,
+                prefix: 'troca'
+            }
         },
         {
             bgColor: '#000',
@@ -103,7 +107,11 @@ const projectsContent: ProjectsContent = {
                     text: 'https://marlacapital.netlify.app/',
                     isLink: true
                 }
-            ]
+            ],
+            images: {
+                count: 5,
+                prefix: 'marla'
+            }
         }
     ]
 }
