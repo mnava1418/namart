@@ -84,7 +84,9 @@
     .app-full-screen {
         min-height: 600px
     }
+}
 
+@media (min-width: 1400px) { 
     .app-container {
         justify-content: space-between;
     }
