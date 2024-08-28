@@ -1,21 +1,33 @@
-.custom-card-container {
+.project-card-container {
     width: 300px;
-    min-height: 480px;
+    min-height: 450px;
     background-color: #fff;
     margin: 24px;
     padding: 32px;
 }
 
-.custom-card-container:hover {
+.project-card-container:hover {
     transform: scale(1.01);
 }
 
-.custom-card-container:hover .custom-card-icon i {
+.project-card-container:hover .project-card-icon i {
     transform: rotate(360deg);
     transition: transform 0.3s ease;
 }
 
-.custom-card-icon {
+.process-card-container {
+    width: 300px;
+    height: 320px;
+    background-color: #fff;
+    margin: 24px;
+    padding: 32px;
+}
+
+.process-card-container:hover {
+    transform: scale(1.01);
+}
+
+.project-card-icon {
     background: var(--main-gradient);
     width: 60px;
     height: 60px;
