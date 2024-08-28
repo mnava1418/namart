@@ -1,14 +1,14 @@
 import { CardProps } from '../../interfaces/content.interface'
 import '../../styles/card.css'
 
-const CustomCard = ({icon, text, title}: CardProps) => {
+const ServiceCard = ({icon, text, title}: CardProps) => {
   return (
-    <div className='d-flex flex-column justify-content-start align-items-center custom-card-container'>
-        <div className='d-flex flex-column justify-content-center align-items-center custom-card-icon'>
+    <div className='d-flex flex-column justify-content-start align-items-center project-card-container'>
+        <div className='d-flex flex-column justify-content-center align-items-center project-card-icon'>
             <i className={`${icon} fs-2`} style={{color: '#fff'}} />
         </div>
         <div style={{margin: '24px 0px 8px 0px'}}>
-            <h3 style={{color: '#000'}}>{title}</h3>
+            <h4 style={{color: '#000'}}>{title}</h4>
         </div>
         <div>
             <p style={{textAlign: 'center'}}>
@@ -19,4 +19,4 @@ const CustomCard = ({icon, text, title}: CardProps) => {
   )
 }
 
-export default CustomCard
+export default ServiceCard
