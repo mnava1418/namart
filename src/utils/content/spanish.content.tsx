@@ -1,4 +1,4 @@
-import { AboutContent, Content, FooterContent, MainContent, MenuContent, ProjectsContent, ServicesContent } from "../../interfaces/content.interface";
+import { AboutContent, Content, FooterContent, MainContent, MenuContent, ProcessContent, ProjectsContent, ServicesContent } from "../../interfaces/content.interface";
 
 const menuContent: MenuContent = {
     about: 'Sobre mí',
@@ -108,13 +108,39 @@ const projectsContent: ProjectsContent = {
     ]
 }
 
+const processContent: ProcessContent = {
+    title: 'Proceso de Trabajo',
+    action: 'Contáctame',
+    steps: [
+        {
+            title: 'Cuéntame tu idea',
+            text: 'Hablemos de tu proyecto. Quiero entender tus objetivos y definir un plan para llevarlo al éxito.',
+            icon: 'bi bi-lightbulb-fill',
+            subtitle: 'Paso 1'
+        },
+        {
+            title: 'Creamos juntos',
+            text: 'Damos vida a tus ideas. Desarrollamos y probamos cada detalle para que todo funcione a la perfección.',
+            icon: 'bi bi-tools',
+            subtitle: 'Paso 2'
+        },
+        {
+            title: 'Listos para lanzar',
+            text: 'Lanzamos tu proyecto y te acompaño con soporte continuo para seguir creciendo.',
+            icon: 'bi bi-rocket-takeoff-fill',
+            subtitle: 'Paso 3'
+        }
+    ]
+}
+
 const spanishContent: Content = {
     menu: menuContent,
     main: mainContent,
     footer: footerContent,
     about: aboutContent,
     services: servicesContent,
-    projects: projectsContent
+    projects: projectsContent,
+    process: processContent
 }
 
 export default spanishContent

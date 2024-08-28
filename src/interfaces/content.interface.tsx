@@ -36,7 +36,8 @@ export type AboutContent = {
 export type CardProps = {
     icon: string,
     title: string,
-    text: string
+    text: string,
+    subtitle?: string
 }
 
 export type ServicesContent = {
@@ -67,11 +68,18 @@ export type ProjectsContent = {
     projects: Array<ProjectItem>
 }
 
+export type ProcessContent = {
+    title: string,
+    steps: Array<CardProps>,
+    action: string
+}
+
 export type Content = {
     menu: MenuContent,
     main: MainContent,
     footer: FooterContent,
     about: AboutContent,
     services: ServicesContent,
-    projects: ProjectsContent
+    projects: ProjectsContent,
+    process: ProcessContent
 }

@@ -4,6 +4,7 @@ import {
     FooterContent, 
     MainContent, 
     MenuContent, 
+    ProcessContent, 
     ProjectsContent, 
     ServicesContent
 } from "../../interfaces/content.interface";
@@ -116,13 +117,39 @@ const projectsContent: ProjectsContent = {
     ]
 }
 
+const processContent: ProcessContent = {
+    title: 'Working Process',
+    action: 'Contact Me',
+    steps: [
+        {
+            title: 'Tell me your idea',
+            text: "Let's discuss your project. I want to understand your goals and define a plan for success.",
+            icon: 'bi bi-lightbulb-fill',
+            subtitle: 'Step 1'
+        },
+        {
+            title: 'Creating together',
+            text: 'We bring your ideas to life. We develop and test every detail to ensure everything works perfectly.',
+            icon: 'bi bi-tools',
+            subtitle: 'Step 2'
+        },
+        {
+            title: 'Ready to Launch',
+            text: 'We launch your project, and I provide ongoing support to keep growing.',
+            icon: 'bi bi-rocket-takeoff-fill',
+            subtitle: 'Step 3'
+        }
+    ]
+}
+
 const englishContent: Content = {
     menu: menuContent,
     main: mainContent,
     footer: footerContent,
     about: aboutContent,
     services: servicesContent,
-    projects: projectsContent
+    projects: projectsContent,
+    process: processContent
 }
 
 export default englishContent
