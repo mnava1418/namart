@@ -74,6 +74,13 @@ export type ProcessContent = {
     action: string
 }
 
+type AboutDetailsSection = {
+    title: string,
+    text: string,
+}
+
+export type AboutDetailsContent = Array<AboutDetailsSection>
+
 export type Content = {
     menu: MenuContent,
     main: MainContent,
@@ -82,6 +89,7 @@ export type Content = {
     services: ServicesContent,
     projects: ProjectsContent,
     process: ProcessContent
+    aboutDetails: AboutDetailsContent
 }
 
 export type CustomViewProps = {

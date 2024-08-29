@@ -1,5 +1,6 @@
 import { 
     AboutContent, 
+    AboutDetailsContent, 
     Content, 
     FooterContent, 
     MainContent, 
@@ -142,6 +143,21 @@ const processContent: ProcessContent = {
     ]
 }
 
+const aboutDetailsContent: AboutDetailsContent = [
+    {
+        title: 'My Story',
+        text: 'My name is Martín Nava, a passionate software engineer and technology enthusiast.\n\nSince my beginnings in 2009, I have forged my professional path in various prominent companies such as Adquira México, BBVA, and Goldman Sachs, where my ability to develop applications has left a tangible mark, especially in the financial sector.\n\nMy current journey has taken me to the streets of New York, where I work at Goldman Sachs as Vice President in the FX Trading Technology area. Here, I lead a team dedicated to creating essential applications that facilitate the daily operations of traders, connecting with clients and effectively serving the Latin American financial market.\n\nMy devotion to software development translates into a constant thirst for knowledge, always eager to assimilate new technologies that allow me to tackle a wide range of challenges. This passion has reached its peak in my decision to embark on my own path. In this new chapter, I yearn to connect with other entrepreneurs, share experiences, and, above all, offer innovative technological solutions to address the unique challenges they face.\n\nMy vision goes beyond mere software creation; it is an unwavering quest for meaningful connections and impactful solutions. By joining the entrepreneurial community, I aspire not only to develop applications but also to build bridges that connect those seeking answers with the technologies that can provide them. I am excited about this journey and determined to turn every line of code into a valuable contribution to technological progress and shared success.\n\nWelcome to my exciting journey in the world of software development!'
+    },
+    {
+        title: 'My Mision',
+        text: 'Developing innovative technological solutions that leave a positive impact on various industries. My commitment is to create digital bridges, facilitating the resolution of challenges for individuals and companies.'
+    },
+    {
+        title: 'My Vision',
+        text: 'To be a leader in software development recognized for creating transformative technological solutions. I seek to exceed expectations and establish myself as a pioneer in technological innovation. I aspire to be the driving force that propels positive change in various industries and communities.'
+    },
+]
+
 const englishContent: Content = {
     menu: menuContent,
     main: mainContent,
@@ -149,7 +165,8 @@ const englishContent: Content = {
     about: aboutContent,
     services: servicesContent,
     projects: projectsContent,
-    process: processContent
+    process: processContent,
+    aboutDetails: aboutDetailsContent
 }
 
 export default englishContent

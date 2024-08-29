@@ -1,4 +1,4 @@
-import { AboutContent, Content, FooterContent, MainContent, MenuContent, ProcessContent, ProjectsContent, ServicesContent } from "../../interfaces/content.interface";
+import { AboutContent, AboutDetailsContent, Content, FooterContent, MainContent, MenuContent, ProcessContent, ProjectsContent, ServicesContent } from "../../interfaces/content.interface";
 
 const menuContent: MenuContent = {
     about: 'Sobre mí',
@@ -133,6 +133,21 @@ const processContent: ProcessContent = {
     ]
 }
 
+const aboutDetailsContent: AboutDetailsContent = [
+    {
+        title: 'Mi Historia',
+        text: 'Mi nombre es Martín Nava, un apasionado ingeniero de software y amante de la tecnología.\n\nDesde mis inicios en 2009, he forjado mi trayectoria profesional en diversas empresas destacadas como Adquira México, BBVA y Goldman Sachs, donde mi habilidad para desarrollar aplicaciones ha dejado una marca tangible, especialmente en el sector financiero.\n\nMi actual travesía me ha llevado hasta las calles de Nueva York, donde trabajo en Goldman Sachs como Vicepresidente en el área de FX Trading Technology. Aquí, lidero un equipo dedicado a la creación de aplicaciones esenciales que facilitan las operaciones diarias de los traders, conectando con clientes y sirviendo al mercado financiero latinoamericano con eficacia.\n\nMi devoción por el desarrollo de software se traduce en una constante sed de conocimiento, siempre ansioso por asimilar nuevas tecnologías que me permitan abordar una amplia gama de desafíos. Esta pasión ha alcanzado su punto culminante en mi decisión de emprender mi propio camino. En este nuevo capítulo, anhelo conectar con otros emprendedores, compartir experiencias y, sobre todo, ofrecer soluciones tecnológicas innovadoras para abordar los desafíos únicos que enfrentan.\n\nMi visión va más allá de la mera creación de software; es una búsqueda inquebrantable de conexiones significativas y soluciones impactantes. Al unirme a la comunidad emprendedora, aspiro no solo a desarrollar aplicaciones, sino también a construir puentes que conecten a aquellos que buscan respuestas con las tecnologías que pueden proporcionarlas. Estoy emocionado por este viaje y decidido a convertir cada línea de código en una contribución valiosa para el progreso tecnológico y el éxito compartido.\n\n¡Bienvenidos a mi apasionante viaje en el mundo del desarrollo de software!'
+    },
+    {
+        title: 'Mi Misión',
+        text: 'Desarrollar soluciones tecnológicas innovadoras que dejen una huella positiva en diversas industrias. Mi compromiso es crear puentes digitales, facilitando la resolución de desafíos para individuos y empresas.'
+    },
+    {
+        title: 'Mi Visión',
+        text: 'Ser líder en desarrollo de software reconocido por la creación de soluciones tecnológicas transformadoras. Busco trascender las expectativas, consolidarme como pionero en la innovación tecnológica. Aspiro a ser la fuerza motriz que impulse el cambio positivo en diversas industrias y comunidades.'
+    },
+]
+
 const spanishContent: Content = {
     menu: menuContent,
     main: mainContent,
@@ -140,7 +155,8 @@ const spanishContent: Content = {
     about: aboutContent,
     services: servicesContent,
     projects: projectsContent,
-    process: processContent
+    process: processContent,
+    aboutDetails: aboutDetailsContent
 }
 
 export default spanishContent
