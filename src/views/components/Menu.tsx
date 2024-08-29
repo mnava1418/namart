@@ -2,19 +2,20 @@ import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
 import { useEffect, useState } from 'react'
 
 import '../../styles/menu.css'
-import { language, MenuContent } from '../../interfaces/content.interface'
+import { Language, MenuContent } from '../../interfaces/content.interface'
 
 type MenuProps = {
   content: MenuContent,
-  language: language,
-  setLanguage: React.Dispatch<React.SetStateAction<language>>
+  language: Language,
+  showSectionLinks?: boolean
+  setLanguage: React.Dispatch<React.SetStateAction<Language>>
 }
 
-const Menu = ({content, language, setLanguage}: MenuProps) => {
+const Menu = ({content, language, setLanguage, showSectionLinks = false}: MenuProps) => {
   const {about, english, home, projects, services, spanish} = content
   const [flag, setFlag] = useState(<><>🇲🇽&nbsp;&nbsp;Es</></>)
 
-  const switchLanguage = (currentLanguage: language) => {
+  const switchLanguage = (currentLanguage: Language) => {
     setLanguage(currentLanguage)
 
     if(currentLanguage === 'es') {
@@ -27,6 +28,15 @@ const Menu = ({content, language, setLanguage}: MenuProps) => {
   useEffect(() => {
     switchLanguage(language)
   }, [])
+
+  const getSectionLinks = () => (
+    <Nav className="me-auto justify-content-center" style={{width: '100%'}}>
+      <Nav.Link href="#home" className='custom-nablink'>{home}</Nav.Link>
+      <Nav.Link href="#about" className='custom-nablink'>{about}</Nav.Link>
+      <Nav.Link href="#services" className='custom-nablink'>{services}</Nav.Link>
+      <Nav.Link href="#projects" className='custom-nablink'>{projects}</Nav.Link>
+    </Nav>
+  )
   
   return (
     <Navbar bg="dark" sticky='top' data-bs-theme="dark" expand="lg" className="custom-navbar">
@@ -36,13 +46,8 @@ const Menu = ({content, language, setLanguage}: MenuProps) => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto justify-content-center" style={{width: '100%'}}>
-            <Nav.Link href="#home" className='custom-nablink'>{home}</Nav.Link>
-            <Nav.Link href="#about" className='custom-nablink'>{about}</Nav.Link>
-            <Nav.Link href="#services" className='custom-nablink'>{services}</Nav.Link>
-            <Nav.Link href="#projects" className='custom-nablink'>{projects}</Nav.Link>
-          </Nav>
-          <Nav className="me-auto justify-content-end">
+          {showSectionLinks ? getSectionLinks() : <></>}
+          <Nav className="justify-content-end" style={!showSectionLinks ? {width: '100%'} : {}}>
             <div className='d-flex flex-row justify-content-start align-items-center'>
                 <Nav.Link href="https://www.instagram.com/namartdev" style={{marginRight: '16px'}} target='_blank'><i className="bi bi-instagram fs-6" /></Nav.Link>
                 <Nav.Link href="https://github.com/mnava1418" style={{marginRight: '16px'}} target='_blank'><i className="bi bi-github fs-6" /></Nav.Link>
