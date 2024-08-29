@@ -1,4 +1,4 @@
-export type language = 'es' | 'en'
+export type Language = 'es' | 'en'
 
 export type MenuContent = {
     home: string,
@@ -82,4 +82,10 @@ export type Content = {
     services: ServicesContent,
     projects: ProjectsContent,
     process: ProcessContent
+}
+
+export type CustomViewProps = {
+    currentContent: Content,
+    language: Language,
+    setLanguage: React.Dispatch<React.SetStateAction<Language>>
 }
