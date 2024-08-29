@@ -1,41 +1,31 @@
 import './styles/main.css'
-
-import Menu from "./views/components/Menu";
-import MainPage from "./views/pages/MainPage";
-import Footer from "./views/components/Footer";
-import {englishContent, spanishContent} from './utils/content/content'
-import { useEffect, useState } from "react";
-import { Content, language } from "./interfaces/content.interface";
-import AboutPage from './views/pages/AboutPage';
-import ServicesPage from './views/pages/ServicesPage';
-import ProjectsPage from './views/pages/ProjectsPage';
-import ProcessPage from './views/pages/ProcessPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomeView from './views/HomeView';
+import AboutDetailsView from './views/AboutDetailsView';
+import { useState, useEffect } from 'react';
+import { Content, Language } from './interfaces/content.interface';
+import englishContent from './utils/content/english.content';
+import spanishContent from './utils/content/spanish.content';
 
 function App() {
   const [currentContent, setCurrentContent] = useState<Content>(spanishContent)
-  const [language, setLanguage] = useState<language>('es')
+  const [language, setLanguage] = useState<Language>('es')
 
   useEffect(() => {
-    if(language === 'es') {
-      setCurrentContent(spanishContent)
-    } else {
-      setCurrentContent(englishContent)
-    }
-    
+      if(language === 'es') {
+          setCurrentContent(spanishContent)
+      } else {
+          setCurrentContent(englishContent)
+      }
   }, [language])
 
   return (
-    <>
-      <Menu content={currentContent.menu} language={language} setLanguage={setLanguage} />
-      <div className="d-flex flex-column justify-content-center align-items-center" style={{width: '100%'}}>
-        <MainPage content={currentContent.main}/>
-        <AboutPage content={currentContent.about}/>
-        <ServicesPage content={currentContent.services}/>
-        <ProjectsPage content={currentContent.projects}/>
-        <ProcessPage content={currentContent.process} />
-        <Footer content={currentContent.footer} />
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomeView currentContent={currentContent} language={language} setLanguage={setLanguage} />} />
+        <Route path="/about" element={<AboutDetailsView currentContent={currentContent} language={language} setLanguage={setLanguage} />} />
+      </Routes>
+    </Router>
   );
 }
 
