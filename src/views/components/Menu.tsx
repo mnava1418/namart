@@ -8,7 +8,7 @@ type MenuProps = {
   content: MenuContent,
   language: Language,
   showSectionLinks?: boolean
-  setLanguage: React.Dispatch<React.SetStateAction<Language>>
+  setLanguage: (language: Language) => void
 }
 
 const Menu = ({content, language, setLanguage, showSectionLinks = false}: MenuProps) => {

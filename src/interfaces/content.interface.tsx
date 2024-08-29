@@ -95,5 +95,5 @@ export type Content = {
 export type CustomViewProps = {
     currentContent: Content,
     language: Language,
-    setLanguage: React.Dispatch<React.SetStateAction<Language>>
+    setLanguage: (language: Language) => void
 }
