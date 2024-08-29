@@ -36,7 +36,7 @@ const AboutPage = ({content}: AboutPageProps) => {
             <p id='aboutParagraph' style={{textAlign: 'center', fontSize: '24px', fontWeight: 'bold'}}>{text}</p>
             <div className='d-flex flex-row justify-content-center' style={{paddingTop: '30px' }}>
                 <Button type='primary' label={buttonOne} onClick={() => {window.open('https://drive.google.com/file/d/18R_czVPRyJfhMmQV4rc0jJF7BX79MIkJ/view?usp=drive_link', '_blank')}} style={{marginRight: '16px'}}/>
-                <Button type='secondary' label={buttonTwo} onClick={() => {alert('Conóceme más')}}/>
+                <Button type='secondary' label={buttonTwo} onClick={() => {window.open('/about', '_self')}}/>
             </div>
           </div>
         </div>
