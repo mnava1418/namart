@@ -57,7 +57,7 @@ const ProjectModal = ({show, handleShow, project}: ProjectModalProps) => {
                                         <li key={index} style={{listStyleType: 'none'}}>
                                             <span style={{fontWeight: 'bold'}}>{section.title}</span>
                                             <br/>
-                                            {section.isLink ? <a href={section.text} target='_blank'>{section.text}</a> : <span>{section.text}</span>}
+                                            {section.isLink ? <a href={section.text} target='_blank' rel='noreferrer'>{section.text}</a> : <span>{section.text}</span>}
                                         </li>
                                         <br/>
                                     </>

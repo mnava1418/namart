@@ -20,6 +20,7 @@ const AboutPage = ({content}: AboutPageProps) => {
     });
 
     textElement.innerHTML = originalText;
+    // eslint-disable-next-line
   }, [text])
   
   return (

@@ -27,6 +27,7 @@ const Menu = ({content, language, setLanguage, showSectionLinks = false}: MenuPr
 
   useEffect(() => {
     switchLanguage(language)
+    // eslint-disable-next-line
   }, [])
 
   const getSectionLinks = () => (
