@@ -1,4 +1,4 @@
-import { AboutContent, AboutDetailsContent, Content, FooterContent, MainContent, MenuContent, ProcessContent, ProjectsContent, ServicesContent } from "../../interfaces/content.interface";
+import { AboutContent, AboutDetailsContent, Content, FooterContent, MainContent, MenuContent, NotFoundContent, ProcessContent, ProjectsContent, ServicesContent } from "../../interfaces/content.interface";
 
 const menuContent: MenuContent = {
     about: 'Sobre mí',
@@ -148,6 +148,11 @@ const aboutDetailsContent: AboutDetailsContent = [
     },
 ]
 
+const notFoundContent: NotFoundContent = {
+    text: 'Página No Encontrada',
+    btnLabel: 'Ir a Inicio'
+}
+
 const spanishContent: Content = {
     menu: menuContent,
     main: mainContent,
@@ -156,7 +161,8 @@ const spanishContent: Content = {
     services: servicesContent,
     projects: projectsContent,
     process: processContent,
-    aboutDetails: aboutDetailsContent
+    aboutDetails: aboutDetailsContent,
+    notFound: notFoundContent
 }
 
 export default spanishContent

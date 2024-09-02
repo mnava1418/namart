@@ -81,6 +81,11 @@ type AboutDetailsSection = {
 
 export type AboutDetailsContent = Array<AboutDetailsSection>
 
+export type NotFoundContent = {
+    text: string,
+    btnLabel: string
+}
+
 export type Content = {
     menu: MenuContent,
     main: MainContent,
@@ -89,7 +94,8 @@ export type Content = {
     services: ServicesContent,
     projects: ProjectsContent,
     process: ProcessContent
-    aboutDetails: AboutDetailsContent
+    aboutDetails: AboutDetailsContent,
+    notFound: NotFoundContent
 }
 
 export type CustomViewProps = {

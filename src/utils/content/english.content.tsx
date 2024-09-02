@@ -5,6 +5,7 @@ import {
     FooterContent, 
     MainContent, 
     MenuContent, 
+    NotFoundContent, 
     ProcessContent, 
     ProjectsContent, 
     ServicesContent
@@ -158,6 +159,11 @@ const aboutDetailsContent: AboutDetailsContent = [
     },
 ]
 
+const notFoundContent: NotFoundContent = {
+    text: 'Page Not Found',
+    btnLabel: 'Go Home'
+}
+
 const englishContent: Content = {
     menu: menuContent,
     main: mainContent,
@@ -166,7 +172,8 @@ const englishContent: Content = {
     services: servicesContent,
     projects: projectsContent,
     process: processContent,
-    aboutDetails: aboutDetailsContent
+    aboutDetails: aboutDetailsContent,
+    notFound: notFoundContent
 }
 
 export default englishContent

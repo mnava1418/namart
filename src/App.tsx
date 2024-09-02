@@ -7,6 +7,7 @@ import { Content } from './interfaces/content.interface';
 import englishContent from './utils/content/english.content';
 import spanishContent from './utils/content/spanish.content';
 import useLanguage from './hooks/useLanguage';
+import NotFound from './views/pages/NotFound';
 
 function App() {
   const navigatorLanguage = useRef(navigator.language || 'en')
@@ -26,7 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeView currentContent={currentContent} language={language} setLanguage={setLanguage} />} />
         <Route path="/about" element={<AboutDetailsView currentContent={currentContent} language={language} setLanguage={setLanguage} />} />
-        <Route  path='*' element={<>Not Found</>}/>
+        <Route  path='*' element={<NotFound currentContent={currentContent} language={language} setLanguage={setLanguage}/>}/>
       </Routes>
     </Router>
   );
