@@ -23,8 +23,8 @@ const menuContent: MenuContent = {
 const mainContent: MainContent = {
     contact: 'Say Hello',
     services: 'My Services',
-    subtitle: 'Software Developer',
-    text: '+10 yrs experience',
+    subtitle: 'Full Stack Developer',
+    text: 'Web solutions, mobile applications, and Web 3.0 projects.',
     title: "Hi, I'm Martin"
 }
 
@@ -38,9 +38,9 @@ const footerContent: FooterContent = {
 const aboutContent: AboutContent = {
     buttonOne: 'Download Resume',
     buttonTwo: 'Know me more',
-    text: 'I am Martín Nava, a software developer with over 10 years of experience in application development. Passionate about technology, I focus on creating innovative solutions that turn ideas into reality.',
+    text: 'I am Martín Nava, a software engineer with over 10 years of experience in software development. Passionate about technology, I focus on creating innovative solutions that turn ideas into reality.',
     title: 'About Me',
-    wordsToHighlight: ["software developer", "technology", "innovative solutions", "application development" ]
+    wordsToHighlight: ["software engineer", "technology", "innovative solutions", "software development" ]
 }
 
 const servicesContent: ServicesContent = {

@@ -12,8 +12,8 @@ const menuContent: MenuContent = {
 const mainContent: MainContent = {
     contact: 'Contáctame',
     services: 'Mis Servicios',
-    subtitle: 'Desarrollador de Software',
-    text: '+10 años de experiencia',
+    subtitle: 'Desarrollador Full Stack',
+    text: 'Soluciones web, aplicaciones móviles y proyectos Web 3.0.',
     title: 'Hola, soy Martin'
 }
 
@@ -27,9 +27,9 @@ const footerContent: FooterContent = {
 const aboutContent: AboutContent = {
     buttonOne: 'Descarga mi CV',
     buttonTwo: 'Conóceme más',
-    text: 'Soy Martín Nava, desarrollador de software con más de 10 años de experiencia en el desarrollo de aplicaciones. Apasionado por la tecnología, me enfoco en crear soluciones innovadoras que transformen ideas en realidad.',
+    text: 'Soy Martín Nava, ingeniero de software con más de 10 años de experiencia en el desarrollo de software. Apasionado por la tecnología, me enfoco en crear soluciones innovadoras que transformen ideas en realidad.',
     title: 'Sobre Mí',
-    wordsToHighlight: ["desarrollador de software", "tecnología", "soluciones innovadoras", "desarrollo de aplicaciones" ]
+    wordsToHighlight: ["ingeniero de software", "tecnología", "soluciones innovadoras", "desarrollo de software" ]
 }
 
 const servicesContent: ServicesContent = {
